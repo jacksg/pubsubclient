@@ -16,14 +16,18 @@
 #define MQTT_VERSION_3_1_1    4
 
 // MQTT_VERSION : Pick the version
-//#define MQTT_VERSION MQTT_VERSION_3_1
+// @JP9 Use version 3.1 NOT 3.1.1
+#define MQTT_VERSION MQTT_VERSION_3_1
 #ifndef MQTT_VERSION
-#define MQTT_VERSION MQTT_VERSION_3_1_1
+// #define MQTT_VERSION MQTT_VERSION_3_1_1
+// @jp9 Set to version 3.1
+#define MQTT_VERSION MQTT_VERSION_3_1
 #endif
 
 // MQTT_MAX_PACKET_SIZE : Maximum packet size
 #ifndef MQTT_MAX_PACKET_SIZE
-#define MQTT_MAX_PACKET_SIZE 128
+// @jp9 set to 2024 from 128
+#define MQTT_MAX_PACKET_SIZE 2024
 #endif
 
 // MQTT_KEEPALIVE : keepAlive interval in Seconds
@@ -33,7 +37,8 @@
 
 // MQTT_SOCKET_TIMEOUT: socket timeout interval in Seconds
 #ifndef MQTT_SOCKET_TIMEOUT
-#define MQTT_SOCKET_TIMEOUT 15
+// @jp9 Set to 5 from 15
+#define MQTT_SOCKET_TIMEOUT 5
 #endif
 
 // MQTT_MAX_TRANSFER_SIZE : limit how much data is passed to the network client
