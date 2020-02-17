@@ -27,7 +27,8 @@
 // MQTT_MAX_PACKET_SIZE : Maximum packet size
 #ifndef MQTT_MAX_PACKET_SIZE
 // @jp9 set to 2024 from 128
-#define MQTT_MAX_PACKET_SIZE 2024
+// @jp9 set to 4032 18 Feb 2020
+#define MQTT_MAX_PACKET_SIZE 4032
 #endif
 
 // MQTT_KEEPALIVE : keepAlive interval in Seconds
