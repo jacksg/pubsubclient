@@ -28,7 +28,10 @@
 #ifndef MQTT_MAX_PACKET_SIZE
 // @jp9 set to 2024 from 128
 // @jp9 set to 4032 18 Feb 2020
-#define MQTT_MAX_PACKET_SIZE 4032
+// 24 Feb 2020 > Reduced the max size to 2900 because of the websockets limit.
+#define MQTT_MAX_PACKET_SIZE 2900
+
+
 #endif
 
 // MQTT_KEEPALIVE : keepAlive interval in Seconds
